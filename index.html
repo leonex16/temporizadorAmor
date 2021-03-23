@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Te Amo ❤️</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Lobster', cursive;
+    }
+
+    body {
+      background-color: #222222;
+    }
+
+    img{
+      height: 100%;
+      width: 100%;
+    }
+
+    section{
+      display: grid;
+      grid-template-columns: repeat(4 , minmax( 300px ,1fr ));
+      justify-content: center;
+      justify-items: center;
+    }
+
+    figure{
+      position: relative;
+    }
+
+    figcaption{
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      background-color: #22222299;
+      color: white;
+      font-size: 1.5rem;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    b{
+      color: #FF010F;
+    }
+
+    .Fachada, .HallAcceso {
+      grid-column: span 2;
+    }
+
+    .Fachada img, .HallAcceso img{
+      max-height: 500px;
+    }
+
+    .con3{
+      display: grid;
+      grid-template-columns: repeat(3 , minmax( 300px ,1fr ));
+      justify-content: center;
+      justify-items: center;
+      grid-column: span 4;
+    }
+
+    .con2{
+      display: grid;
+      grid-template-columns: repeat(2 , minmax( 300px ,1fr ));
+      justify-content: center;
+      justify-items: center;
+      grid-column: span 4;
+      max-width: 1100px;
+    }
+
+    .text{
+      display: block;
+      text-align: center;
+      font-size: 200%;
+      color: white;
+    }
+
+    .home{
+      display: grid;
+      grid-template-columns: repeat(2 , minmax( 300px ,1fr ));
+      justify-content: center;
+      justify-items: center;
+    }
+
+    .home img{
+      height: 400px;
+      width: 800px;
+      object-fit: cover;
+      object-position: bottom;
+    }
+    p{
+      font-size: 5rem;
+    }
+
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="text">
+      <h1>Restan</h1>
+      <h2 id="counterBack"></h2>
+      <p>🏬 👩‍❤️‍👨</p>
+    </section>
+    <section>
+      <figure class="Fachada">
+        <img src="https://zone.ileben.cl/wp-content/uploads/2020/08/Fachada-Web.jpg" alt="Fachada">
+        <figcaption>Fachada</figcaption>
+      </figure>
+      <figure class="HallAcceso">
+        <img src="https://zone.ileben.cl/wp-content/uploads/2021/02/Hall-Acceso-scaled.jpg" alt="Hall Acceso">
+        <figcaption>Hall Acceso</figcaption>
+      </figure>
+      <div class="con3">
+        <figure class="SalaMultiuso">
+          <img src="https://zone.ileben.cl/wp-content/uploads/2021/02/Sala-Comun-2-scaled.jpg" alt="Sala Multiuso">
+          <figcaption>Sala Multiuso</figcaption>
+        </figure>
+        <figure class="Piscina">
+          <img src="https://zone.ileben.cl/wp-content/uploads/2021/02/Piscina-scaled.jpg" alt="Piscina">
+          <figcaption>Piscina</figcaption>
+        </figure>
+        <figure class="Gimnasio">
+          <img src="https://zone.ileben.cl/wp-content/uploads/2021/02/Gym-scaled.jpg" alt="Gimnasio">
+          <figcaption>Gimnasio</figcaption>
+        </figure>
+      </div>
+      <div class="con2">
+        <figure class="SalaGourmet">
+          <img src="https://zone.ileben.cl/wp-content/uploads/2021/02/Sala-Gourmet-scaled.jpg" alt="Sala Gourmet">
+          <figcaption>Sala Gourmet</figcaption>
+        </figure>
+        <figure class="SalaCine">
+          <img src="https://zone.ileben.cl/wp-content/uploads/2021/02/Sala-TV-scaled.jpg" alt="Sala de Cine">
+          <figcaption>Sala de Cine</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="home">
+      <figure class="LivingCocinaIntegrada">
+        <img src="https://zone.ileben.cl/wp-content/uploads/2020/08/Living-2-Web.jpg" alt="Living & Cocina Integrada">
+        <figcaption>Living & Cocina Integrada</figcaption>
+      </figure>
+
+      <figure class="DormitorioPrincipal">
+        <img src="https://zone.ileben.cl/wp-content/uploads/2020/08/Dormitorio-Principal-2-Web.jpg" alt="Dormitorio Principal">
+        <figcaption>Dormitorio Principal</figcaption>
+      </figure>
+      <figure class="Dormitorio">
+        <img src="https://zone.ileben.cl/wp-content/uploads/2020/08/Dormitorio-Web.jpg" alt="Dormitorio">
+        <figcaption>Dormitorio</figcaption>
+      </figure>
+      <figure class="Bano">
+        <img src="https://zone.ileben.cl/wp-content/uploads/2020/08/Ban%CC%83o-Web.jpg" alt="Baño">
+        <figcaption>Baño</figcaption>
+      </figure>
+    </section>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/countdown/2.6.0/countdown.min.js"
+    integrity="sha512-FkM4ZGExuYz4rILLbNzw8f3HxTN9EKdXrQYcYfdluxJBjRLthYPxxZixV/787qjN3JLs2607yN5XknR/cQMU8w=="
+    crossorigin="anonymous"></script>
+  <script>
+    let counterBack = document.getElementById("counterBack");
+
+    setInterval(() => {
+      let dateTimeNow = new Date();
+      let dateTimeFinish = new Date('2021-03-24 15:00:00');
+      let rest = countdown(dateTimeNow, dateTimeFinish);
+      counterBack.innerHTML = `
+      Días <b>${rest.days}</b>, <b>${rest.hours}</b>  Horas con <b>${rest.minutes}</b> minutos y <b>${rest.seconds}</b> segundos`;
+    }, 1000);
+  </script>
+</body>
+
+</html>
